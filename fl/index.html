@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-light p-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <img src="images/logo.png" alt="Flipkart Logo" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Search for Products, Brands and More">
+                </div>
+                <div class="col-md-3 text-right">
+                    <a href="#" class="btn btn-outline-primary">Login</a>
+                    <a href="#" id="cartBtn" class="btn btn-primary ml-2">Cart (<span id="cartCount">0</span>)</a>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Electronics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="#mobiles">Mobiles</a>
+                        <a class="dropdown-item" href="#laptops">Laptops</a>
+                        <a class="dropdown-item" href="#cameras">Cameras</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Fashion
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#men">Men</a>
+                        <a class="dropdown-item" href="#women">Women</a>
+                        <a class="dropdown-item" href="#kids">Kids</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Grocery
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="#fruits-vegetables">Fruits & Vegetables</a>
+                        <a class="dropdown-item" href="#beverages">Beverages</a>
+                        <a class="dropdown-item" href="#snacks">Snacks</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Banner -->
+<section class="banner">
+    <div class="container">
+        <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/banner1.jpg" class="d-block w-100" alt="Banner Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner1.jpg" class="d-block w-100" alt="Banner Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner1.jpg" class="d-block w-100" alt="Banner Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Electronics Section -->
+<section class="products" id="mobiles">
+    <div class="container">
+        <h2>Mobiles</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/mobile.jpg" class="card-img-top" alt="Mobile 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile 1</h5>
+                        <p class="card-text">$199.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/mobile.jpg" class="card-img-top" alt="Mobile 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile 2</h5>
+                        <p class="card-text">$299.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/mobile.jpg" class="card-img-top" alt="Mobile 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile 3</h5>
+                        <p class="card-text">$399.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="laptops">
+    <div class="container">
+        <h2>Laptops</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/laptop.jpg" class="card-img-top" alt="Laptop 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop 1</h5>
+                        <p class="card-text">$799.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/laptop.jpg" class="card-img-top" alt="Laptop 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop 2</h5>
+                        <p class="card-text">$899.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/laptop.jpg" class="card-img-top" alt="Laptop 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop 3</h5>
+                        <p class="card-text">$999.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="cameras">
+    <div class="container">
+        <h2>Cameras</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/camera.jpg" class="card-img-top" alt="Camera 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 1</h5>
+                        <p class="card-text">$499.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/camera.jpg" class="card-img-top" alt="Camera 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 2</h5>
+                        <p class="card-text">$599.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/camera.jpg" class="card-img-top" alt="Camera 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Camera 3</h5>
+                        <p class="card-text">$699.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fashion Section -->
+<section class="products" id="men">
+    <div class="container">
+        <h2>Men's Fashion</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/men.jpg" class="card-img-top" alt="Men's Fashion 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's Fashion 1</h5>
+                        <p class="card-text">$49.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/men.jpg" class="card-img-top" alt="Men's Fashion 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's Fashion 2</h5>
+                        <p class="card-text">$59.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/men.jpg" class="card-img-top" alt="Men's Fashion 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's Fashion 3</h5>
+                        <p class="card-text">$69.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="women">
+    <div class="container">
+        <h2>Women's Fashion</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/women.jpg" class="card-img-top" alt="Women's Fashion 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Fashion 1</h5>
+                        <p class="card-text">$79.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/women.jpg" class="card-img-top" alt="Women's Fashion 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Fashion 2</h5>
+                        <p class="card-text">$89.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/women.jpg" class="card-img-top" alt="Women's Fashion 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Women's Fashion 3</h5>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="kids">
+    <div class="container">
+        <h2>Kids' Fashion</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/kids.jpg" class="card-img-top" alt="Kids' Fashion 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Kids' Fashion 1</h5>
+                        <p class="card-text">$29.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/kids.jpg" class="card-img-top" alt="Kids' Fashion 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Kids' Fashion 2</h5>
+                        <p class="card-text">$39.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/Kids.jpg" class="card-img-top" alt="Kids'Fashion 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kids' Fashion 3</h5>
+                        <p class="card-text">$49.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Grocery Section -->
+<section class="products" id="fruits-vegetables">
+    <div class="container">
+        <h2>Fruits & Vegetables</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/fruit.jpg" class="card-img-top" alt="Fruits 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Fruits 1</h5>
+                        <p class="card-text">$4.99 / kg</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/fruit.jpg" class="card-img-top" alt="Fruits 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fruits 2</h5>
+                        <p class="card-text">$3.99 / kg</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/vegetable.jpg" class="card-img-top" alt="Vegetables 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegetables 1</h5>
+                        <p class="card-text">$2.49 / kg</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="beverages">
+    <div class="container">
+        <h2>Beverages</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/beverage.jpg" class="card-img-top" alt="Beverage 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Beverage 1</h5>
+                        <p class="card-text">$1.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/beverage.jpg" class="card-img-top" alt="Beverage 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Beverage 2</h5>
+                        <p class="card-text">$2.49</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/beverage.jpg" class="card-img-top" alt="Beverage 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Beverage 3</h5>
+                        <p class="card-text">$1.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="snacks">
+    <div class="container">
+        <h2>Snacks</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/snack.jpg" class="card-img-top" alt="Snack 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Snack 1</h5>
+                        <p class="card-text">$0.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/snack.jpg" class="card-img-top" alt="Snack 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Snack 2</h5>
+                        <p class="card-text">$1.49</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/snack.jpg" class="card-img-top" alt="Snack 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Snack 3</h5>
+                        <p class="card-text">$1.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- Cart Section -->
+<section class="cart" id="cartSection" style="display: none;">
+    <div class="container">
+        <h2>Your Cart</h2>
+        <!-- <button id="scrollToCart" class="btn btn-primary mb-3">Go to Cart</button> -->
+        <div id="emptyCartOption" style="display: none;">
+            <button id="emptyCartBtn" class="btn btn-danger mb-3">Empty Cart</button>
+            <ul id="cartItems" class="mb-3">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <button id="clearSelected" class="btn btn-warning mb-3" style="display: none;">Clear</button>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6 offset-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Total</h5>
+                        <p class="card-text">Total Price: $<span id="totalPrice">0.00</span></p>
+                        <button class="btn btn-primary">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 Flipkart Clone. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
